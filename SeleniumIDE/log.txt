@@ -1,0 +1,6 @@
+2016-08-10 17:18:12 [info] Playing test case FC0000
+2016-08-10 17:18:12 [info] Executing: |open | / |  |
+2016-08-10 17:18:13 [info] Executing: |click | id=kw |  |
+2016-08-10 17:18:13 [info] Executing: |type | id=kw | selenium |
+2016-08-10 17:18:13 [info] Executing: |click | id=su |  |
+2016-08-10 17:18:14 [info] Test case passed
