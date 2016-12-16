@@ -1,0 +1,27 @@
+#-------------------------------------------------------------# 
+# Demo test for the watir-classic controller. 
+# 
+# Launch IE browser. 
+#-------------------------------------------------------------# 
+
+#require 'rubygems'    
+#require 'watir-classic'  #watir和watir-classic不能同时存在 
+#  
+#ie = Watir::Browser.new  #必须用watir-classic包的方式
+#ie.goto("http://www.runoob.com/") 
+#ie.close
+
+
+
+#-------------------------------------------------------------# 
+# Demo test for the watir controller. 
+# 
+# Launch IE browser. 
+#-------------------------------------------------------------# 
+
+require 'rubygems'    
+require 'watir'  #watir和watir-classic不能同时存在 
+  
+ie = Watir::Browser.new :ie  #必须用watir包的方式，调用IEdriver，IEdriver需要防在C:\Ruby23\bin
+ie.goto("http://www.runoob.com/") 
+ie.close

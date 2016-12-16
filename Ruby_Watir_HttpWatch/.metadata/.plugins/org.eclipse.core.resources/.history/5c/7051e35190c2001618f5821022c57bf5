@@ -1,0 +1,11 @@
+class DateTimeClass
+  
+  def initialize ()
+  end
+  
+  def getTimeStamp()
+    time = Time.new.strftime("%Y_%m_%d_%H_%M_%S")
+    retrun time
+  end
+  
+end

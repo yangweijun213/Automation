@@ -1,0 +1,12 @@
+#-------------------------------------------------------------# 
+# Demo test for the Watir controller. 
+# Ruby23
+# Use Chrome browser. 
+#-------------------------------------------------------------# 
+
+require 'rubygems'    
+require 'watir'  #watir和watir-classic不能同时存在 
+
+chrome = Watir::Browser.new :chrome  
+chrome.goto("http://www.runoob.com/")
+chrome.close  

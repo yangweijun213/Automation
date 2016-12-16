@@ -1,0 +1,14 @@
+class DateTimeClass
+    
+  def getTimeStamp()
+#    time = Time.new
+#    time2= time.strftime("%Y_%m_%d_%H_%M_%S")
+    i =110
+    return ii
+  end
+  
+end
+
+test = DateTimeClass.new()
+aaa = test.getTimeStamp()
+puts aaa
