@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.dltk.ruby.launching.RubyLaunchConfigurationType">
-<stringAttribute key="mainScript" value="test.rb"/>
+<stringAttribute key="mainScript" value="Utility/lib/Test/Test.rb"/>
 <stringAttribute key="nature" value="org.eclipse.dltk.ruby.core.nature"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/CollineSingleUserTest/test.rb"/>
+<listEntry value="/CollineSingleUserTest/Utility/lib/Test/Test.rb"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>

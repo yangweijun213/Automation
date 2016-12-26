@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.dltk.ruby.launching.RubyLaunchConfigurationType">
-<stringAttribute key="mainScript" value="Login.rb"/>
+<stringAttribute key="mainScript" value="colbiz/Login.rb"/>
 <stringAttribute key="nature" value="org.eclipse.dltk.ruby.core.nature"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/CollineSingleUserTest/Login.rb"/>
+<listEntry value="/CollineSingleUserTest/colbiz/Login.rb"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
