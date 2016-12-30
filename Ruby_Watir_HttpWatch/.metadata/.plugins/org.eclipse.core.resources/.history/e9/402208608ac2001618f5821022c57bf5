@@ -1,6 +1,0 @@
-class Configure
-  
-  $url="http://54.183.138.41:8080/colline/"
-  $fieldList = "Started, Page Title, Page ID, Device Name, User Name, Time, Sent, Received, Method, Result, Type, URL, Render Start, DOM Load, HTTP Load, Page Load, Network, Cache Read"
-  
-end

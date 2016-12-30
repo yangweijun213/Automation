@@ -1,0 +1,6 @@
+
+require 'test/unit/testsuite'
+
+require File.expand_path('../TC_MyTest',__FILE__) 
+require File.expand_path('../TC_MyTest2',__FILE__) 
+

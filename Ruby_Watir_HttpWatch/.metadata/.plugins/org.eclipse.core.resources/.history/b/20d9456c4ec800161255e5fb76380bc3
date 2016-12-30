@@ -1,0 +1,6 @@
+
+class add1d
+  def add()
+    puts 3
+  end
+end

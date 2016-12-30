@@ -1,0 +1,7 @@
+begin
+  puts "true"
+rescue
+  put "处理错误"
+ensure
+  puts "ensure"
+end

@@ -1,0 +1,5 @@
+class Class1
+  def add
+    puts 3
+  end
+end

@@ -1,0 +1,11 @@
+class Father
+  
+  def says()
+    puts "I am father"
+  end
+  
+  def fatherInfo()
+    puts "father info"
+  end
+  
+end

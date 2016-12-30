@@ -1,0 +1,4 @@
+require_relative "class1"  
+
+class Class2
+end

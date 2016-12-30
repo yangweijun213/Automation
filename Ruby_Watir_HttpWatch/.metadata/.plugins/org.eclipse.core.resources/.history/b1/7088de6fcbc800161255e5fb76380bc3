@@ -1,0 +1,6 @@
+begin
+  puts 0/0
+raise 'A test exception.'
+rescue => e
+puts e.message
+end

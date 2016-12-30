@@ -1,0 +1,122 @@
+require 'rubygems'
+require 'win32ole'
+require 'watir-classic'  #watir和watir-classic不能同时存在
+
+#加载默认路径引入公共类
+require File.expand_path('../../utility/lib/Common',__FILE__) 
+require File.expand_path('../../utility/lib/LoggerClass',__FILE__)
+require File.expand_path('../../utility/lib/ExcelDataDriven',__FILE__)
+require File.expand_path('../../utility/lib/ConfigureClass',__FILE__)
+
+#定义登录过程的类
+class Login
+  def initialize (name)
+    @tranName=name
+  end
+
+  #定义测初始化启动方法 start
+  def start ()
+    # 使用watir-classic打开IE
+    
+    #创建日志文件
+    $logger = LoggerClass.new().getLogger()
+  end
+
+  #定义 Open Page过程方法
+  def openPage (url)
+    
+    ie = Watir::IE.new
+    # Attach HttpWatch
+    control = WIN32OLE.new('HttpWatch.Controller')
+    plugin = control.IE.Attach(ie.ie)
+
+    #Clear the HttpWatch Log
+    plugin.Clear()
+
+    # Start recording
+    plugin.Record()
+
+    ie.goto("#{url}")
+
+    # Page check
+    if ie.text.include?("Login")
+      $logger.info("test pass")
+    else
+      $logger.error("test failure")
+      ie.screenshot.save "#{@tranName}_#{Common.new().getStrftime()}.png"
+    end
+
+    # Stop recording
+    plugin.Stop()
+
+    #Exports a specified list of data fields in CSV (Comma-Separated Values) format
+    plugin.Log.ExportFieldsAsCSV("#$httpWatchLogFolder\\#{@tranName}_#{Common.new().getStrftime()}.csv","#$fieldList")
+  end
+
+  #define login() method
+  def login (uname,password)
+
+    if puts browser.title == "Session already exists"
+      # Attach HttpWatch
+      control = WIN32OLE.new('HttpWatch.Controller')
+      plugin = control.IE.Attach(ie.ie)
+
+      #Clear the HttpWatch Log
+      plugin.Clear()
+
+      # Start recording
+      plugin.Record()
+      
+      #Clicking a button Continue
+      ie.button(:name, "continue").click
+
+      #Checking for text in a page
+      if ie.text.include?("Home")
+        $logger.info("test pass")
+      else
+        $logger.error("test failure")
+        ie.screenshot.save "#{@tranName}_#{Common.new().getStrftime()}.png"
+      end
+
+      # Stop recording
+      plugin.Stop()
+
+      #Exports a specified list of data fields in CSV (Comma-Separated Values) format
+      plugin.Log.ExportFieldsAsCSV("#$httpWatchLogFolder\\#{@tranName}_#{DateTimeClass.new().getTimeStamp()}.csv","#$fieldList")
+
+    else
+      # Attach HttpWatch
+      control = WIN32OLE.new('HttpWatch.Controller')
+      plugin = control.IE.Attach(ie.ie)
+
+      #Clear the HttpWatch Log
+      plugin.Clear()
+
+      # Start recording
+      plugin.Record()
+
+      #Setting a text field
+      ie.text_field(:name, "j_username").set "#$userName"
+      ie.text_field(:name, "j_password").set "#$password"
+
+      #Clicking a button
+      ie.button(:name, "submit").click
+
+      #Checking for text in a page
+      if ie.text.include?("Home")
+        logger.info("test pass")
+      else
+        logger.info("test failure")
+        ie.screenshot.save "#{@tranName}_#{Common.new().getStrftime()}.png"
+      end
+
+      # Stop recording
+      plugin.Stop()
+
+      #Exports a specified list of data fields in CSV (Comma-Separated Values) format
+      plugin.Log.ExportFieldsAsCSV("#$httpWatchLogFolder\\#{@tranName}_#{DateTimeClass.new().getTimeStamp()}.csv","#$fieldList")
+    end
+
+  end
+end
+
