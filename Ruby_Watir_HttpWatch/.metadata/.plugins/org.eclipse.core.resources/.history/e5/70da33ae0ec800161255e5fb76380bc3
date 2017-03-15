@@ -1,3 +1,0 @@
-require 'LoggerFactory'
-
-Test::Unit::UI::Console::TestRunner.run(TestScriptLogger)

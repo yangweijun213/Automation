@@ -1,6 +1,0 @@
-
-class BasicNumber 
-  def add()
-    puts 3
-  end
-end

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<launch:InterpreterInfo xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:launch="http://www.eclipse.org/dltk/launching.ecore" environment="org.eclipse.dltk.core.environment.localEnvironment" location="C:/Ruby23/bin/ruby.exe">
-  <contents xsi:type="launch:InterpreterGeneratedContent" key="scripts/builtin.rb" interpreterLastModified="2016-12-02T02:40:36.000+0800" fetchedAt="2016-12-26T11:03:26.443+0800" lastModified="2016-12-14T17:24:20.151+0800"/>
-</launch:InterpreterInfo>

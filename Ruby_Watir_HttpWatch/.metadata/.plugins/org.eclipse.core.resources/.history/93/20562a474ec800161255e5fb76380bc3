@@ -1,3 +1,0 @@
-require_relative "class1"  
-
-class1.new().add()

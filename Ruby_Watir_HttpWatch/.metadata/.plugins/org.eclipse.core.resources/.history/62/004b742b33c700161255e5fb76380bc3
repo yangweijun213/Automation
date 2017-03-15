@@ -1,8 +1,0 @@
-require 'logger'
-
-
-class LoggerClass
- 
-  logger.level=Logger::INFO
-  
-end

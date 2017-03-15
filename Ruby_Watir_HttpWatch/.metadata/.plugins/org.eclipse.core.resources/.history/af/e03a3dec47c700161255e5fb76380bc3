@@ -1,3 +1,0 @@
-require "xls"
-require "watir"
-require "win32ole"

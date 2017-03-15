@@ -1,7 +1,0 @@
-class aaa
-  
-  def add()
-    puts 3
-  end
-  
-end
