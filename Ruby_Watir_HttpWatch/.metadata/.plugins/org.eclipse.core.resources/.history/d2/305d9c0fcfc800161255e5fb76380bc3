@@ -1,0 +1,41 @@
+#################################################################################
+# 1 - This properties file is intend to hold all the configurable parameters. ###
+# 2 - Please change them before start automation test                         ###
+#                                                                             ###
+#################################################################################
+
+###Colline System###
+#Colline system url#
+$colline_url= "http://54.193.33.252:8080/colline/"
+#Colline system username#
+$colline_username = "sa4"
+#Colline system password#
+$colline_password = "password"
+
+####Colline Database Connection###
+#the user name to login to database
+colline.database.user = "changeit"
+#clear password for above user to login to database
+colline.database.password = "changeit"
+#Database schema name
+colline.database.schema = "changeit"
+#Colline database jdbc url, which constructed by database server address,server port,instance.
+#Support both Oracle and SQLServer, For Oracle, support to use SID, ServiceName, TNS String.
+#colline.database.jdbc.url=jdbc:oracle:thin:@//${Database Server Address}:${Server Port}/${ServiceName}
+#colline.database.jdbc.url=jdbc:oracle:thin:@${Database Server Address}:${Server Port}:${Instance}
+#colline.database.jdbc.url=jdbc:oracle:thin:@(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = ${Database Server Address})(PORT = ${Server Port}))(CONNECT_DATA =(SERVER = DEDICATED)(ORACLE_SID = ${Instance})))
+#colline.database.jdbc.url=jdbc:jtds:sqlserver://${Database Server Address}:${Server Port}/${SCHEMA};instance=${Instance}
+colline.database.jdbc.url= "changeit"
+
+###HttpWatch###
+$fieldList = "Started, Page Title, Page ID, Device Name, User Name, Time, Sent, Received, Method, Result, Type, URL, Render Start, DOM Load, HTTP Load, Page Load, Network, Cache Read"
+$httpWatchLogFolder = "D:\\workspace\\Automation_PST\\Automation\\Ruby_Watir_HttpWatch\\CollineSingleUserTest\\colsel\\log"
+  
+#Test Data
+$ExcelPath ="D:\\workspace\\Automation_PST\\Automation\\Ruby_Watir_HttpWatch\\CollineSingleUserTest\\colbiz\\TestData"
+  
+#logPath
+$logPath = "D:\\workspace\\Automation_PST\\Automation\\Ruby_Watir_HttpWatch\\CollineSingleUserTest\\colsel\\log"
+  
+#ScreenshotPath 
+$screenShot = "D:\\workspace\\Automation_PST\\Automation\\Ruby_Watir_HttpWatch\\CollineSingleUserTest\\colsel\\log"

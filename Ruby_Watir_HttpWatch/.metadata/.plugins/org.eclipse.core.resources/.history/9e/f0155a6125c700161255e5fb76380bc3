@@ -1,0 +1,8 @@
+require 'logger'
+
+#Create a logger for the specified file.
+file = File.open('foo.log', File::WRONLY | File::APPEND)
+logger = Logger.new(file)
+
+#Create a logger which ages the logfile daily
+logger = Logger.new('foo.log', 'daily')

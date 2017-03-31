@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<project >
+ <java jar="D:\workspace\Automation\SeleniumIDE\selenium-server-standalone-2.48.2.jar" fork="true">
+    <arg line="-port 4444"/>
+    <arg line="-htmlSuite &quot;*firefox &quot;"/>
+    <arg line="&quot;https://www.baidu.com&quot;"/>
+    <arg line="&quot;D:\workspace\Automation\SeleniumIDE\TestSuite.html&quot;"/>
+    <arg line="&quot;D:\workspace\Automation\SeleniumIDE\TestResults.html&quot;"/>
+    <arg line="-timeout 1800"/>
+    <arg line="-avoidProxy"/>
+ </java>  
+</project >

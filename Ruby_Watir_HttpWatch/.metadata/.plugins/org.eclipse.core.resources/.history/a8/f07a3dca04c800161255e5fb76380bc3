@@ -1,0 +1,16 @@
+require 'logger'
+require 'common'
+
+class Log
+  
+  def getLogger(name)
+      #Create a logger
+      logger = Logger.new("#{name}")
+      
+      #输出不同级别的日志
+      logger.level = Logger::INFO
+      
+      return logger
+    end
+    
+end

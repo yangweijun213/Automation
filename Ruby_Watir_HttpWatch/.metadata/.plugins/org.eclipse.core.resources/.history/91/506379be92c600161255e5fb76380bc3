@@ -1,0 +1,7 @@
+class LoggerClass
+  
+  require 'watir'
+  require 'logger'
+  require 'watir/logger'
+  
+end

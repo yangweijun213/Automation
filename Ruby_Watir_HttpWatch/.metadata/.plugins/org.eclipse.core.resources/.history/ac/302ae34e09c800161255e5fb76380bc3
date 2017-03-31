@@ -1,0 +1,8 @@
+require 'test/unit'
+require File.dirname(__FILE__) + '/Test/ScriptLogger'
+
+class TestScriptLogger <Test::Unit::TestCase    #T必须大写,否则通不过 
+  def test_getLogger
+    
+  end
+end

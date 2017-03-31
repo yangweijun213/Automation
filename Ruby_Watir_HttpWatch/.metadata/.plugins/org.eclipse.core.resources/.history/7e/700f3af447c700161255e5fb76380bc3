@@ -1,0 +1,4 @@
+require "win32ole"
+
+excel = WIN32OLE::new('excel.Application')
+workbook = excel.Workbooks.Open('D:\\workspace\\Automation_PST\\Automation\\Ruby_Watir_HttpWatch\\CollineSingleUser\\TestData.xls')

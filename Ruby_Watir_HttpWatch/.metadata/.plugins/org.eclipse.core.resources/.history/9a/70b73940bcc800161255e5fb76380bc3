@@ -1,0 +1,19 @@
+class Father
+  def says()
+    puts "I am father"
+  end
+  
+  def fatherInfo()
+    puts "father info"
+  end
+end
+
+class Son < Father
+  def says()
+    puts "I am son."
+  end
+  
+  def sonInfo()
+    puts "son info"
+  end
+end

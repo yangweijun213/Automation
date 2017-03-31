@@ -1,0 +1,7 @@
+begin
+  puts "true"
+rescue
+  put "anc"
+ensure
+  puts "ensure"
+end

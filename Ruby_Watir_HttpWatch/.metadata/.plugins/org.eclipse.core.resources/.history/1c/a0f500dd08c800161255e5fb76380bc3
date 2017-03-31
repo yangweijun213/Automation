@@ -1,0 +1,7 @@
+require 'test/unit'
+
+class TestLog <Test::Unit::TestCase    #T必须大写,否则通不过 
+  def test_getLogger
+    
+  end
+end

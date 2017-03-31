@@ -1,0 +1,16 @@
+require 'headless'
+
+eadless = Headless.new
+headless.start
+
+Before do
+  headless.video.start_capture
+end
+
+After do |scenario|
+  if scenario.failed?
+    headless.video.stop_and_save("/tmp/#{BUILD_ID}/#{scenario.name.split.join("_")}.mov")
+  else
+    headless.video.stop_and_discard
+  end
+end

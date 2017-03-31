@@ -1,0 +1,29 @@
+require 'logger'
+
+# default logger
+class LoggerFactory
+
+ # start logger
+ def LoggerFactory.start_default_logger(fileNamePrefix)
+   time = Time.now.strftime("%Y%m%d%H%M%S")
+   logger = CoreLogger.new(File.join(File.dirname(__FILE__), "..//TestLog//#{fileNamePrefix}_#{time}.txt") ,2, 1000000)
+   #logger = CoreLogger.new(File.join(File.expand_path(".") + "\logs\"， "#{fileNamePrefix}_#{time}.txt") ，2， 1000000)
+   return logger
+ end 
+end
+
+class  CoreLogger < Logger
+ # extend the logger， overide it
+ def initialize(fileName， logsToKeep， maxLogSize)
+   super(fileName ， logsToKeep， maxLogSize)
+   self.level = Logger::INFO   # set to INFO level
+   self.datetime_format = "%d-%b-%Y %H:%M:%S"
+   self.info("Logger starting...")         
+ end
+
+ #overloaded "log" from logger.rb to something more intuitive.
+ def log(message)
+   puts "log #{message} "         #optional. comment out if you don't want to see logging in the console
+   info(message)                   #calls info in logger.rb -- would be good to use different logging levels
+ end
+end 

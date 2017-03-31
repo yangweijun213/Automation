@@ -1,0 +1,5 @@
+def divude (x)
+  raise ArgumentError if x==0
+end
+
+divide(0)

@@ -1,0 +1,8 @@
+
+info = Mediainfo.new "C:\\Program Files\\MediaInfo"
+
+info.video?            # true
+info.video.count       # 2
+info.video.duration    # raises SingleStreamAPIError !
+info.video[0].duration # 120
+info.video[1].duration # 10

@@ -1,0 +1,14 @@
+class dd
+  #HttpWatch
+  $fieldList = "Started, Page Title, Page ID, Device Name, User Name, Time, Sent, Received, Method, Result, Type, URL, Render Start, DOM Load, HTTP Load, Page Load, Network, Cache Read"
+  $httpWatchLogFolder = "D:\\workspace\\Automation_PST\\Automation\\Ruby_Watir_HttpWatch\\CollineSingleUserTest\\colsel\\log"
+  
+  #Test Data
+  $ExcelPath ="D:\\workspace\\Automation_PST\\Automation\\Ruby_Watir_HttpWatch\\CollineSingleUserTest\\colbiz\\TestData"
+  
+  #logPath
+  $logPath = "D:\\workspace\\Automation_PST\\Automation\\Ruby_Watir_HttpWatch\\CollineSingleUserTest\\colsel\\log"
+  
+  #ScreenshotPath 
+  $screenShot = "D:\\workspace\\Automation_PST\\Automation\\Ruby_Watir_HttpWatch\\CollineSingleUserTest\\colsel\\log"
+end

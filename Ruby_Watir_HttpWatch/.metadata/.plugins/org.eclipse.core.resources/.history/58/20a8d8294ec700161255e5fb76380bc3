@@ -1,0 +1,3 @@
+ary = Array.new
+ary[0]=1
+put ary[0]
